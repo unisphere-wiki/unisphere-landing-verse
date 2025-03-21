@@ -24,9 +24,9 @@ const Team: React.FC = () => {
       fallback: "MA",
     },
     {
-      name: "Jyojith George Thaliath",
+      name: "Jyojith Thaliath",
       role: "Technical Architect",
-      fallback: "JG",
+      fallback: "JT",
     },
     {
       name: "Paola Andrea",
