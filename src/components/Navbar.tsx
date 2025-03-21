@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
             Contact
           </a>
           <a
-            href="#start"
+            href="https://bizquery.unisphere.wiki"
             className="px-4 py-2 text-sm font-medium text-white button-gradient rounded-full shadow-md hover:shadow-lg transition-all duration-200"
           >
             Get Started
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
               Contact
             </a>
             <a
-              href="#start"
+              href="https://bizquery.unisphere.wiki"
               className="px-4 py-2 text-white button-gradient rounded-full shadow-md hover:shadow-lg mx-4 text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
