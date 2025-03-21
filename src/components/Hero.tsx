@@ -48,12 +48,12 @@ const Hero: React.FC = () => {
               The Center of the <span className="text-gradient">Knowledge Verse</span>
             </h1>
             <p className="text-lg md:text-xl text-foreground/80 mt-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              Unlock the universal business insights with <a href="https://bizquery.unisphere.wiki" className="text-primary hover:underline">BizQuery</a>, the revolutionary platform that connects you to the center of all business knowledge.
+              Unlock the universal business insights with <a href="http://bizquery.unisphere.wiki" className="text-primary hover:underline">BizQuery</a>, the revolutionary platform that connects you to the center of all business knowledge.
             </p>
           </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <a href="https://bizquery.unisphere.wiki" className="px-8 py-3 text-white button-gradient rounded-full shadow-lg hover:shadow-xl transition-all duration-300 font-medium w-full sm:w-auto text-center">
+            <a href="http://bizquery.unisphere.wiki" className="px-8 py-3 text-white button-gradient rounded-full shadow-lg hover:shadow-xl transition-all duration-300 font-medium w-full sm:w-auto text-center">
               Start Your Journey
             </a>
             <a href="#demo" className="px-8 py-3 bg-white/90 text-foreground rounded-full shadow-md hover:shadow-lg transition-all duration-300 font-medium w-full sm:w-auto text-center border border-gray-200">
@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
         <div className="w-full lg:w-1/2 flex items-center justify-center relative animate-fade-in" style={{ animationDelay: "0.5s" }}>
           <div ref={orbitRef} className="relative w-[400px] h-[400px] transition-transform duration-200 ease-out">
             {/* Center Element */}
-            <a href="https://bizquery.unisphere.wiki" className="block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+            <a href="http://bizquery.unisphere.wiki" className="block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
               <GlassCard className="w-32 h-32 rounded-2xl flex items-center justify-center">
                 <div className="text-2xl font-bold text-gradient">BizQuery</div>
               </GlassCard>

@@ -16,7 +16,7 @@ const CallToAction: React.FC = () => {
             </h2>
             
             <p className="text-lg text-foreground/80 mb-10 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              Join thousands of forward-thinking businesses that have already discovered the power of UniSphere's <a href="https://bizquery.unisphere.wiki" className="text-primary hover:underline">BizQuery</a> platform.
+              Join thousands of forward-thinking businesses that have already discovered the power of UniSphere's <a href="http://bizquery.unisphere.wiki" className="text-primary hover:underline">BizQuery</a> platform.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 animate-fade-in" style={{ animationDelay: "0.2s" }}>
@@ -39,7 +39,7 @@ const CallToAction: React.FC = () => {
             <form className="max-w-md mx-auto animate-fade-in" style={{ animationDelay: "0.3s" }}
                   onSubmit={(e) => {
                     e.preventDefault();
-                    window.location.href = "https://bizquery.unisphere.wiki";
+                    window.location.href = "http://bizquery.unisphere.wiki";
                   }}>
               <div className="flex flex-col sm:flex-row gap-3">
                 <input
