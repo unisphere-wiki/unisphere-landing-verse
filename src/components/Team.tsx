@@ -2,7 +2,7 @@
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail } from "lucide-react";
+import { Mail, Users } from "lucide-react";
 
 type TeamMember = {
   name: string;
@@ -39,7 +39,11 @@ const Team: React.FC = () => {
     <section id="team" className="section-padding bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">Our Team</h2>
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Users className="h-8 w-8 text-unisphere-600" />
+            <h2 className="text-3xl md:text-4xl font-bold text-gradient">Our Team</h2>
+          </div>
+          <div className="w-24 h-1 bg-gradient-to-r from-unisphere-500 to-knowledge-500 mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Meet the brilliant minds behind UniSphere, working together to transform how we connect and share knowledge.
           </p>
