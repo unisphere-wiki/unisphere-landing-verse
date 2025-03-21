@@ -1,0 +1,67 @@
+name: Deploy Node.js App to DigitalOcean Droplet
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Install sshpass
+        run: sudo apt-get update && sudo apt-get install -y sshpass
+
+      - name: Connect to Droplet & Deploy
+        run: |
+          sshpass -p "${{ secrets.DO_DROPLET_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.DO_DROPLET_USER }}@${{ secrets.DO_DROPLET_IP }} <<'EOF'
+            APP_DIR=/root/node-web
+            DEPLOY_DIR=/root/sgmm-api
+
+            echo " Preparing deployment..."
+
+            # Backup old package-lock.json for comparison
+            if [ -f "$APP_DIR/package-lock.json" ]; then
+              cp $APP_DIR/package-lock.json /tmp/old-package-lock.json
+            fi
+
+            # Clone or pull the repo
+            if [ -d "$APP_DIR/.git" ]; then
+              cd $APP_DIR
+              git reset --hard
+              git pull origin main
+            else
+              rm -rf $APP_DIR
+              git clone https://github.com/unisphere-wiki/unisphere-landing-verse.git $APP_DIR
+              cd $APP_DIR
+            fi
+
+            # Compare package-lock.json to decide if npm install is needed
+            cd $APP_DIR
+            NEED_INSTALL=false
+            if [ ! -d node_modules ]; then
+              NEED_INSTALL=true
+            elif ! cmp -s /tmp/old-package-lock.json package-lock.json; then
+              NEED_INSTALL=true
+            fi
+
+            if [ "$NEED_INSTALL" = true ]; then
+              echo "Installing/updating dependencies..."
+              npm install
+            else
+              echo "Using cached node_modules (no changes in lockfile)"
+            fi
+
+            echo "Building app..."
+            npm run build
+
+            echo "Deploying dist to $DEPLOY_DIR/bizquery..."
+            rm -rf $DEPLOY_DIR/unisphere/*
+            cp -r dist/* $DEPLOY_DIR/unisphere/
+
+            echo "Deployment complete."
+          EOF
