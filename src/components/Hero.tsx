@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
               The Center of the <span className="text-gradient">Knowledge Verse</span>
             </h1>
             <p className="text-lg md:text-xl text-foreground/80 mt-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              Unlock the universal business insights with BizQuiz, the revolutionary platform that connects you to the center of all business knowledge.
+              Unlock the universal business insights with BizQuery, the revolutionary platform that connects you to the center of all business knowledge.
             </p>
           </div>
           
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
           <div ref={orbitRef} className="relative w-[400px] h-[400px] transition-transform duration-200 ease-out">
             {/* Center Element */}
             <GlassCard className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-2xl flex items-center justify-center z-20">
-              <div className="text-2xl font-bold text-gradient">BizQuiz</div>
+              <div className="text-2xl font-bold text-gradient">BizQuery</div>
             </GlassCard>
             
             {/* Orbiting Elements */}

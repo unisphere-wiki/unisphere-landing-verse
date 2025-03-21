@@ -81,7 +81,7 @@ const Features: React.FC = () => {
             Navigate the <span className="text-gradient">Knowledge Verse</span> with Precision
           </h2>
           <p className="text-foreground/70 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            BizQuiz combines cutting-edge technology with comprehensive business intelligence to provide you with the tools you need to excel in today's competitive landscape.
+            BizQuery combines cutting-edge technology with comprehensive business intelligence to provide you with the tools you need to excel in today's competitive landscape.
           </p>
         </div>
 

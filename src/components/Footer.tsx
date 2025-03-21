@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-semibold mb-4">Products</h3>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-200">BizQuiz Platform</a></li>
+              <li><a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-200">BizQuery Platform</a></li>
               <li><a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-200">Knowledge Analytics</a></li>
               <li><a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-200">Industry Insights</a></li>
               <li><a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-200">Certification Programs</a></li>

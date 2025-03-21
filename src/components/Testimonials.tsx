@@ -14,13 +14,13 @@ interface Testimonial {
 const Testimonials: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
-      content: "UniSphere's BizQuiz has fundamentally transformed how our executive team approaches strategic decision-making. The depth of insights is unparalleled.",
+      content: "UniSphere's BizQuery has fundamentally transformed how our executive team approaches strategic decision-making. The depth of insights is unparalleled.",
       name: "Alexandra Chen",
       role: "Chief Strategy Officer",
       company: "Global Innovations Inc."
     },
     {
-      content: "As someone who needs to stay at the cutting edge of business intelligence, BizQuiz has become my daily essential. It's like having the world's business knowledge at my fingertips.",
+      content: "As someone who needs to stay at the cutting edge of business intelligence, BizQuery has become my daily essential. It's like having the world's business knowledge at my fingertips.",
       name: "Marcus Johnson",
       role: "VP of Operations",
       company: "Frontier Technologies"
@@ -32,7 +32,7 @@ const Testimonials: React.FC = () => {
       company: "Elevate Enterprises"
     },
     {
-      content: "I was skeptical at first, but BizQuiz has proven to be the most valuable business intelligence tool we've ever invested in. The ROI has been extraordinary.",
+      content: "I was skeptical at first, but BizQuery has proven to be the most valuable business intelligence tool we've ever invested in. The ROI has been extraordinary.",
       name: "Jonathan Williams",
       role: "CEO",
       company: "Momentum Ventures"
@@ -60,7 +60,7 @@ const Testimonials: React.FC = () => {
             Trusted by Business <span className="text-gradient">Leaders</span> Worldwide
           </h2>
           <p className="text-foreground/70 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Discover how professionals across industries are leveraging UniSphere's BizQuiz to transform their approach to business intelligence.
+            Discover how professionals across industries are leveraging UniSphere's BizQuery to transform their approach to business intelligence.
           </p>
         </div>
 
