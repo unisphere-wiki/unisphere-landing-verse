@@ -59,7 +59,7 @@ jobs:
             echo "Building app..."
             npm run build
 
-            echo "Deploying dist to $DEPLOY_DIR/bizquery..."
+            echo "Deploying dist to $DEPLOY_DIR/unisphere..."
             rm -rf $DEPLOY_DIR/unisphere/*
             cp -r dist/* $DEPLOY_DIR/unisphere/
 
