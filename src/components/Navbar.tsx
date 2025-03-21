@@ -19,8 +19,7 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: "Product", href: "#product" },
     { name: "Features", href: "#features" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Pricing", href: "#pricing" },
+    // Removed the Testimonials and Pricing links
   ];
 
   return (
