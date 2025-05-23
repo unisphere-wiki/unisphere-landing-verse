@@ -26,7 +26,12 @@ const Footer: React.FC = () => {
               <a href="#" className="text-foreground/60 hover:text-primary transition-colors duration-200">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-foreground/60 hover:text-primary transition-colors duration-200">
+              <a 
+                href="https://github.com/unisphere-wiki" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-foreground/60 hover:text-primary transition-colors duration-200"
+              >
                 <Github className="w-5 h-5" />
               </a>
             </div>
