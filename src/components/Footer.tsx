@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Twitter, Linkedin, Github, Mail } from "lucide-react";
 
@@ -14,6 +13,12 @@ const Footer: React.FC = () => {
             <p className="text-foreground/70 text-sm mb-6">
               The center of the knowledge verse, empowering businesses with unparalleled business intelligence.
             </p>
+            <div className="flex items-center space-x-2 mb-4">
+              <Mail className="w-5 h-5 text-foreground/60" />
+              <a href="mailto:hello@unisphere.wiki" className="text-sm text-foreground/80 hover:text-primary transition-colors duration-200">
+                hello@unisphere.wiki
+              </a>
+            </div>
             <div className="flex space-x-4">
               <a href="#" className="text-foreground/60 hover:text-primary transition-colors duration-200">
                 <Twitter className="w-5 h-5" />
@@ -23,9 +28,6 @@ const Footer: React.FC = () => {
               </a>
               <a href="#" className="text-foreground/60 hover:text-primary transition-colors duration-200">
                 <Github className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-foreground/60 hover:text-primary transition-colors duration-200">
-                <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -56,7 +58,15 @@ const Footer: React.FC = () => {
               <li><a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-200">About Us</a></li>
               <li><a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-200">Careers</a></li>
               <li><a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-200">Press</a></li>
-              <li><a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-200">Contact</a></li>
+              <li>
+                <a 
+                  href="mailto:hello@unisphere.wiki" 
+                  className="text-foreground/70 hover:text-primary transition-colors duration-200 flex items-center gap-2"
+                >
+                  <Mail className="w-4 h-4" />
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
         </div>
